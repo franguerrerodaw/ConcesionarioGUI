@@ -111,7 +111,7 @@ public class Gestion {
 					break;
 				case JOptionPane.NO_OPTION:
 				try {
-					concesionario = Ficheros.abrir(concesionario);
+					Principal.concesionario = Ficheros.abrir(concesionario);
 					gestionModificado(frmConcesionario);
 				} catch (FileNotFoundException e) {
 					JOptionPane.showMessageDialog(frame, "No se ha podido abrir el fichero", "Error: FileNotFoundException", JOptionPane.ERROR_MESSAGE);
@@ -124,7 +124,7 @@ public class Gestion {
 		}
 		else {
 			try {
-				concesionario = Ficheros.abrir(concesionario);
+				Principal.concesionario = Ficheros.abrir(concesionario);
 				gestionModificado(frmConcesionario);
 			} catch (FileNotFoundException e) {
 				JOptionPane.showMessageDialog(frame, "No se ha podido abrir el fichero", "Error: FileNotFoundException", JOptionPane.ERROR_MESSAGE);
